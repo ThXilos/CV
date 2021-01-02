@@ -1,0 +1,247 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+span {
+  display: table;
+}
+
+ul {
+  padding-top: 2rem;
+  padding-left: 10%;
+  display: inline-block;
+}
+
+li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+i {
+  position: absolute;
+  padding-top: 1rem;
+  right: 5%;
+  font-size: 2rem;
+
+}
+
+a:hover {
+  color: #aa76e7;
+  border-bottom: 3px solid #fff;
+}
+
+.m-item:hover{
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 3px solid #aa76e7;
+
+}
+
+input{
+
+border-style: none;
+text-align: left;
+border-bottom: 2px solid;
+}
+
+::placeholder {
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-inputs{
+  margin: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+
+
+.active{
+  border-bottom: 3px solid #aa76e7;
+  color: inherit;
+  display: inline-block;
+}
+
+
+.top-container {
+  margin: 10% auto 5%;
+}
+
+.img-shape {
+  position: absolute;
+  width: 50%;
+  left: 35%
+}
+
+.primary-title {
+  font-weight: bold;
+  font-size: 5.5rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aaaaaa;
+}
+
+.sub2-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.profile-pic{
+  border-radius: 5%;
+}
+
+.about-title{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.about-text{
+color: grey;
+font-weight: bold;
+font-size: 1.3em;
+line-height: 2;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .profile-pic{
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  .contact{
+    text-align: center;
+  }
+
+  .top-container {
+    margin: 25% auto 25%;
+  }
+
+  .primary-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaaaaa;
+  }
+
+  .img-shape {
+    visibility: hidden;
+  }
+
+  .cv-container {
+    display: inline-block;
+  }
+
+  .inL {
+    padding-top: 1rem;
+    padding-left: 40%;
+    font-size: 2rem;
+    line-height: 1.4em;
+    font-size: 1em;
+    display: inline;
+    padding: 0 4px;
+    color: #fff;
+    background-color: #333;
+    /*This is the coolest!*/
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  ul {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  li {
+    display: inline;
+    padding-right: 2rem;
+  }
+
+
+}
+
+.secondary-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.job-title {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge-primary {
+  background-color: #aa76e7;
+  font-size: 1rem;
+}
+
+.badge-secondary {
+  font-size: 1rem;
+}
+
+/*Scroll ToTop Button*/
+#button {
+  display: inline-block;
+  background-color: #aa76e7;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
